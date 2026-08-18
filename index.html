@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>शुभविवाह निमंत्रण</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- MUSIC BUTTON -->
+
+    <button id="musicBtn" class="music-btn">
+        🔊
+    </button>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                श्री गणेशाय नमः
+            </p>
+
+            <h1 id="coupleNames">
+                अमोल <span>♥</span> तेजस्विनी
+            </h1>
+
+            <p id="welcomeText">
+                आमच्या शुभविवाह सोहळ्यास आपले हार्दिक स्वागत आहे
+            </p>
+
+            <div class="scroll-text">
+                खाली स्क्रोल करा ↓
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRO VIDEO -->
+
+    <section class="video-section">
+
+        <div class="section-title">
+            <p>आमची सुंदर सुरुवात</p>
+            <h2>Our Story</h2>
+        </div>
+
+        <div class="video-box">
+
+            <video
+                id="introVideo"
+                controls
+                playsinline>
+
+                <source
+                    src="assets/video/intro.mp4"
+                    type="video/mp4">
+
+            </video>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCRATCH / REVEAL SECTION -->
+
+    <section class="reveal-section">
+
+        <div class="section-title">
+
+            <p>एक छोटासा Surprise</p>
+
+            <h2>स्पर्श करून उघडा ✨</h2>
+
+        </div>
+
+        <div class="reveal-card"
+            id="revealCard">
+
+            <div class="hidden-message">
+
+                <h2>
+                    तुमची उपस्थिती
+                </h2>
+
+                <p>
+                    आमच्यासाठी सर्वात सुंदर भेट आहे ❤️
+                </p>
+
+            </div>
+
+            <div class="cover"
+                id="cover">
+
+                <span>
+                    येथे क्लिक करा
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PHOTO GALLERY -->
+
+    <section class="gallery-section">
+
+        <div class="section-title">
+
+            <p>आमच्या आठवणी</p>
+
+            <h2>Beautiful Moments</h2>
+
+        </div>
+
+        <div class="gallery"
+            id="gallery">
+
+        </div>
+
+    </section>
+
+
+    <!-- WEDDING DETAILS -->
+
+    <section class="details-section">
+
+        <div class="section-title">
+
+            <p>आपली भेट ठरली आहे</p>
+
+            <h2>शुभविवाह सोहळा</h2>
+
+        </div>
+
+        <div class="details-card">
+
+            <div class="detail-item">
+
+                <span class="icon">📅</span>
+
+                <h3>दिनांक</h3>
+
+                <p id="weddingDate"></p>
+
+                <p id="weddingDay"></p>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span class="icon">⏰</span>
+
+                <h3>वेळ</h3>
+
+                <p id="weddingTime"></p>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span class="icon">📍</span>
+
+                <h3 id="venueName"></h3>
+
+                <p id="venueAddress"></p>
+
+            </div>
+
+
+            <a
+                id="mapButton"
+                href="#"
+                target="_blank"
+                class="map-btn">
+
+                📍 Google Maps वर पहा
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- MESSAGE SECTION -->
+
+    <section class="message-section">
+
+        <div class="message-card">
+
+            <div class="heart">
+                ♥
+            </div>
+
+            <h2>
+                तुमच्यासाठी एक संदेश
+            </h2>
+
+            <p id="mainMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- WISH SECTION -->
+
+    <section class="wish-section">
+
+        <div class="section-title">
+
+            <p>तुमचे प्रेम आणि आशीर्वाद</p>
+
+            <h2>Words For Forever</h2>
+
+        </div>
+
+
+        <form id="wishForm">
+
+            <input
+                type="text"
+                id="guestName"
+                placeholder="तुमचे नाव"
+                required>
+
+            <textarea
+                id="guestMessage"
+                placeholder="आमच्यासाठी शुभेच्छा लिहा..."
+                required></textarea>
+
+            <button type="submit">
+
+                शुभेच्छा पाठवा ❤️
+
+            </button>
+
+        </form>
+
+
+        <div
+            id="wishesList"
+            class="wishes-list">
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2 id="footerNames">
+            अमोल ♥ तेजस्विनी
+        </h2>
+
+        <p>
+            तुमच्या उपस्थितीची आम्ही आतुरतेने वाट पाहत आहोत ❤️
+        </p>
+
+        <p class="copyright">
+            Made with ❤️
+        </p>
+
+    </footer>
+
+
+    <!-- AUDIO -->
+
+    <audio
+        id="backgroundMusic"
+        loop>
+
+        <source
+            src="assets/audio/music.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+    <script src="data.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
